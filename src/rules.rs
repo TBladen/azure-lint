@@ -151,20 +151,3 @@ impl fmt::Display for Rule {
     write!(f, "Expected {:?} to {} {}", self.property, op, expected)
   }
 }
-
-// pub fn get_rules() -> Vec<Rule> {
-//   let rules = vec![
-//     Rule {
-//       selector: "azure".try_into().unwrap(),
-//       property: "location".try_into().unwrap(),
-//       condition: Condition::Equal("uksouth".to_owned()),
-//     },
-//     Rule {
-//       selector: "azure".try_into().unwrap(),
-//       property: "name".try_into().unwrap(),
-//       condition: Condition::Match(Regex::new(r"^[a-zA-Z0-9-]+$").unwrap()),
-//     },
-//   ];
-
-//   rules
-// }
